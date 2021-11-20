@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-social": "^5.1.1",
+    "build": "^0.1.4",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "node": "^15.8.0",
+    "popper.js": "^1.16.1",
+    "react-animation-components": "^3.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"npm run lite",
+    "start": "npm run lite",
     "lite": "lite-server"
   },
   "author": "Minchao Duclos",
