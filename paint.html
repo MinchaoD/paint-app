@@ -11,7 +11,7 @@
         <title> My Paint App </title>
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row justify-content-center mb-5 pt-5">
                 <h1> Paint Something Colorful </h1>
             </div>
@@ -28,6 +28,46 @@
                 <button class="btn brush" onClick="brushSize(20)">
                     <i class="fa fa-2x fa-solid fa-circle"></i>
                 </button>
+            </div>
+            <div class="row justify-content-center">
+                <h5> Pick your stamps </h5>
+            </div>
+            <div class="row justify-content-around mb-5">
+                <div id="heart" >
+                        <img onClick="getImage('images/heart.png')" src="images/heart.png" width="50" height="50" />
+                </div>
+                <div id="bird" >
+                    <img onClick="getImage('images/bird.png')" src="images/bird.png" width="50" height="50" />
+                </div>
+                <div id="cloud" >
+                    <img onClick="getImage('images/clouds.jpg')" src="images/clouds.jpg" width="50" height="50" />
+                </div>
+                <div id="santa" >
+                    <img onClick="getImageBig('images/santa.jpg')" src="images/santa.jpg" width="50" height="50" />
+                </div>
+                <div id="gift" >
+                    <img onClick="getImage('images/gift.png')" src="images/gift.png" width="50" height="50" />
+                </div>
+                <div id="tree" >
+                    <img onClick="getImageBig('images/tree.png')" src="images/tree.png" width="50" height="50" />
+                </div>
+                <div id="turkey" >
+                    <img onClick="getImageBig('images/turkey.png')" src="images/turkey.png" width="50" height="50" />
+                </div>
+                <div id="leaf" >
+                    <img onClick="getImage('images/leaf.jpg')" src="images/leaf.jpg" width="50" height="50" />
+                </div>
+                <div id="pumpkin" >
+                    <img onClick="getImageBig('images/pumpkin.jpg')" src="images/pumpkin.jpg" width="50" height="50" />
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div id="eraser"  >
+                        <img onClick="getEraser()" src="images/eraser.png" width="50" height="50" class = 'mr-5'/>
+                </div>
+                <div id="save" >
+                    <img onClick="saveImage()" src="images/save.jpg" width="50" height="50" class="ml-5" />
+            </div>
             </div>
             <div class="row justify-content-center mb-5">
                 <canvas id="draw" width="800" height="800"></canvas>

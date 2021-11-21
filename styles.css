@@ -25,3 +25,11 @@ h5{
 .smalldot{
   font-size: 10px;
 }
+
+.img {
+  transition: transform .2s; 
+}
+
+img:hover{
+  transform: scale(1.3);
+}
