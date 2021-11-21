@@ -1,8 +1,8 @@
 const canvas = document.querySelector('#draw');
     const ctx = canvas.getContext('2d')
     canvas.width = window.innerWidth - 100;
-    // this is to set the canvas to be the innerwidth of the window minus 10
-    canvas.height = window.innerHeight;
+    // this is to set the canvas to be the innerwidth of the window minus 100
+    canvas.height = window.innerHeight - 100;
     ctx.strokeStyle = 'red';
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
@@ -44,6 +44,8 @@ const canvas = document.querySelector('#draw');
     //   }
       // if linewidth is bigger than 60, then flip the direction and do --, when linewidth is smaller than 1, then flip the direction again and do ++
     }
+
+    function brushSize(number){ctx.lineWidth = number}
     
     canvas.addEventListener('mousemove',draw)
     canvas.addEventListener('mousedown', (e) => {isDrawing = true; [lastX, lastY] = [e.offsetX, e.offsetY]})

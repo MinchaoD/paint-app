@@ -1,5 +1,5 @@
 html, body {
-    margin: 0;
+    padding: 100;
     background-color: white
     }
 
@@ -13,6 +13,10 @@ h1{
   color:rgb(95, 11, 121)
 }
   
+h5{
+  font-family: "Lobster", cursive;
+  color:rgb(95, 11, 121)
+}
 
 .brush:hover{
   color:grey

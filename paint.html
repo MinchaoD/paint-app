@@ -13,20 +13,23 @@
     <body>
         <div class="container-fluid">
             <div class="row justify-content-center mb-5 pt-5">
-                <h1> Colorful Paint App </h1>
+                <h1> Paint Something Colorful </h1>
+            </div>
+            <div class="row justify-content-center">
+                <h5> Pick the brush size </h5>
             </div>
             <div class="row justify-content-center mb-5">
-                <button class="btn brush smalldot">
+                <button class="btn brush smalldot" onClick="brushSize(2)">
                     <i class="fa fa-1x fa-solid fa-circle"></i>
                 </button>
-                <button class="btn ml-5 mr-5 brush">
+                <button class="btn ml-5 mr-5 brush" onClick="brushSize(10)">
                     <i class="fa fa-lg fa-solid fa-circle"></i>
                 </button>
-                <button class="btn brush">
+                <button class="btn brush" onClick="brushSize(20)">
                     <i class="fa fa-2x fa-solid fa-circle"></i>
                 </button>
             </div>
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center mb-5">
                 <canvas id="draw" width="800" height="800"></canvas>
             </div>
         </div>
