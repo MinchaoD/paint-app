@@ -11,9 +11,34 @@
         <title> My Paint App </title>
     </head>
     <body>
+        <header class="jumbotron ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class='col col-2'>
+                        <h1> Paint App </h1>
+                    </div>
+                    <nav class="container navbar navbar-expand-sm h4 navbar-light justify-content-end">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="row">
+                            <div class="collapse navbar-collapse " id="navbar" >
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active "> <a class="nav-link mr-5" href="/#home" >Home </a></li>
+                                    <li class="nav-item"> <a class="nav-link mr-5" href="/#app"> Start Painting </a></li>
+                                    <li class="nav-item"> <a class="nav-link mr-5" href="/#description">Description </a></li>
+                                    <li class="nav-item"> <a class="nav-link mr-5" href="/#contactme">Contact Me</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
         <div class="container">
             <div class="row justify-content-center mb-5 pt-5">
-                <h1> Paint Something Colorful </h1>
+                <h2> Paint Something Colorful </h2>
             </div>
             <div class="row justify-content-center">
                 <h5> Pick the brush size </h5>
@@ -33,39 +58,39 @@
                 <h5> Pick your stamps </h5>
             </div>
             <div class="row justify-content-around mb-5">
-                <div id="heart" >
+                <div class="stampimage" >
                         <img onClick="getImage('images/heart.png')" src="images/heart.png" width="50" height="50" />
                 </div>
-                <div id="bird" >
+                <div class="stampimage" >
                     <img onClick="getImage('images/bird.png')" src="images/bird.png" width="50" height="50" />
                 </div>
-                <div id="cloud" >
+                <div class="stampimage">
                     <img onClick="getImage('images/clouds.jpg')" src="images/clouds.jpg" width="50" height="50" />
                 </div>
-                <div id="santa" >
+                <div class="stampimage" >
                     <img onClick="getImageBig('images/santa.jpg')" src="images/santa.jpg" width="50" height="50" />
                 </div>
-                <div id="gift" >
+                <div class="stampimage">
                     <img onClick="getImage('images/gift.png')" src="images/gift.png" width="50" height="50" />
                 </div>
-                <div id="tree" >
+                <div class="stampimage">
                     <img onClick="getImageBig('images/tree.png')" src="images/tree.png" width="50" height="50" />
                 </div>
-                <div id="turkey" >
+                <div class="stampimage" >
                     <img onClick="getImageBig('images/turkey.png')" src="images/turkey.png" width="50" height="50" />
                 </div>
-                <div id="leaf" >
+                <div class="stampimage" >
                     <img onClick="getImage('images/leaf.jpg')" src="images/leaf.jpg" width="50" height="50" />
                 </div>
-                <div id="pumpkin" >
+                <div class="stampimage" >
                     <img onClick="getImageBig('images/pumpkin.jpg')" src="images/pumpkin.jpg" width="50" height="50" />
                 </div>
             </div>
             <div class="row justify-content-center mb-5">
-                <div id="eraser"  >
+                <div class="stampimage" >
                         <img onClick="getEraser()" src="images/eraser.png" width="50" height="50" class = 'mr-5'/>
                 </div>
-                <div id="save" >
+                <div class="stampimage">
                     <img onClick="saveImage()" src="images/save.jpg" width="50" height="50" class="ml-5" />
             </div>
             </div>

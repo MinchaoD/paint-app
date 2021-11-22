@@ -10,12 +10,89 @@
         <link rel="stylesheet" href="/styles.css" />
         <title> My Paint App </title>
     </head>
+
     <body>
-        <div class="container-fluid">
-        
-        <a role="button" class="btn btn-link" style="color:black" href="/paint.html"> Try the Paint App </a>
+        <header class="jumbotron" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class='col col-2'>
+                        <h1> Paint App </h1>
+                    </div>
+                    <nav class="container navbar navbar-expand-sm h4 navbar-light justify-content-end">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="row">
+                            <div class="collapse navbar-collapse " id="navbar" >
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active "> <a class="nav-link mr-5" href="/#home" >Home </a></li>
+                                    <li class="nav-item"> <a class="nav-link mr-5" href="/#app"> Start Painting </a></li>
+                                    <li class="nav-item"> <a class="nav-link mr-5" href="/#description">Description </a></li>
+                                    <li class="nav-item"> <a class="nav-link mr-5" href="/#contactme">Contact Me</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+  
+ 
+        <div class="container justify-content-center mx-auto mt-5 mb-5" id="description">
+            <div class="row justify-content-center mb-4">
+                <h2> About this App </h2>
+            </div>
+            <div class="row justify-content-center">
+                <h5> Some features of this paint app are: </h5>
+            </div>
+            <div class="row justify-content-center">
+                <ul>
+                    <li>
+                        <h5>Users can draw lines with color changing from hue to be 0 to 360.</h5>
+                    </li>
+                    <li>
+                        <h5>Users can choose the brush size with 3 options: thin, medium and thick.</h5>
+                    </li>
+                    <li>
+                        <h5>Users can choose different stamps to add onto their drawings. </h5>
+                    </li>
+                    <li>
+                        <h5>Users can erase their drawings by clicking on the eraser icon button. </h5>
+                    </li>
+                    <li>
+                        <h5>Users can save their drawings by clicking the save icon button.</h5>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-        
+        <div class="container row justify-content-center mx-auto mt-5 mb-5" id="app">
+            <a role="button" class="btn btn-link btn-lg btn-dark appbutton" style="color:white" href="/paint.html"> Try the Paint App </a>
+        </div>
+
+        <div class="container justify-content-center mx-auto mt-5 mb-5" id="">
+            <div class="row justify-content-center mb-4">
+                <h2>Some examples</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/images/drawing1.png" class="fitimage" alt="drawing example1" >
+                </div>
+                <div class="col-md-6 ">
+                    <img src="/images/drawing2.png" class="fitimage" alt="drawing example2" >
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                    <img src="/images/drawing3.png" class="fitimage" alt="drawing example3" >
+            </div>
+        </div>
+
+        <div class="container justify-content-center mx-auto mt-5 mb-5" id="">
+            <div class="row justify-content-center mb-4">
+                <h2>Demo</h2>
+            </div>
+        </div>
+      
 
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
