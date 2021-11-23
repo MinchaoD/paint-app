@@ -1,8 +1,8 @@
 const canvas = document.querySelector('#draw');
     const ctx = canvas.getContext('2d')
-    canvas.width = window.innerWidth - 500;
-    // this is to set the canvas to be the innerwidth of the window minus 100
-    canvas.height = window.innerHeight - 100;
+    canvas.width = window.innerWidth*2/3;
+    // this is to set the canvas to be the two thirds of the innerwidth of the window 
+    canvas.height = window.innerHeight*3/4;
     ctx.strokeStyle = 'red';
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
@@ -104,7 +104,7 @@ const canvas = document.querySelector('#draw');
     }
     function erase(e){
         if(!isErasing) return;
-        ctx.strokeStyle = "black";
+        ctx.strokeStyle = "white";
         ctx.beginPath();
         ctx.moveTo(lastX, lastY);
         ctx.lineTo(e.offsetX, e.offsetY);
@@ -116,7 +116,6 @@ const canvas = document.querySelector('#draw');
     }
     canvas.addEventListener('mousemove', (e) => {
         if(isEraser){
-            isErasing = true;
             erase(e);
             canvas.style.cursor= "url('https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-draw-eraser-icon.png') 15 15, auto";
         } else {

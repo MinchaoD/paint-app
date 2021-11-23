@@ -13,22 +13,23 @@
 
     <body>
         <header class="jumbotron" id="home">
-            <div class="container-fluid">
+            <div class="container-fluid ">
                 <div class="row">
-                    <div class='col col-2'>
+                    <div class='col-xs-12 col-lg-4'>
                         <h1> Paint App </h1>
                     </div>
-                    <nav class="container navbar navbar-expand-sm h4 navbar-light justify-content-end">
-                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar">
+                    <nav class="container navbar navbar-expand-sm h5 navbar-light justify-content-end d-none d-lg-block">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="row">
                             <div class="collapse navbar-collapse " id="navbar" >
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active "> <a class="nav-link mr-5" href="/#home" >Home </a></li>
-                                    <li class="nav-item"> <a class="nav-link mr-5" href="/#app"> Start Painting </a></li>
-                                    <li class="nav-item"> <a class="nav-link mr-5" href="/#description">Description </a></li>
-                                    <li class="nav-item"> <a class="nav-link mr-5" href="/#contactme">Contact Me</a></li>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active "> <a class="nav-link mr-3" href="/#home" >Home </a></li>
+                                    <li class="nav-item"> <a class="nav-link mr-3" href="/paint.html"> Start Painting </a></li>
+                                    <li class="nav-item"> <a class="nav-link mr-3" href="/#description">Description </a></li>
+                                    <li class="nav-item"> <a class="nav-link mr-3" href="/#demo">Demo </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/#developer">Contact Me</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -43,56 +44,84 @@
                 <h2> About this App </h2>
             </div>
             <div class="row justify-content-center">
-                <h5> Some features of this paint app are: </h5>
+                <h5><b> Some features of this paint app are: </b></h5>
             </div>
             <div class="row justify-content-center">
                 <ul>
                     <li>
-                        <h5>Users can draw lines with color changing from hue to be 0 to 360.</h5>
+                        <h5>Users can draw lines with color auto changing from hue to be 0 to 360.</h5>
                     </li>
                     <li>
                         <h5>Users can choose the brush size with 3 options: thin, medium and thick.</h5>
                     </li>
                     <li>
-                        <h5>Users can choose different stamps to add onto their drawings. </h5>
+                        <h5>Users can choose different fun stamps to add onto their drawings. </h5>
                     </li>
                     <li>
                         <h5>Users can erase their drawings by clicking on the eraser icon button. </h5>
                     </li>
                     <li>
-                        <h5>Users can save their drawings by clicking the save icon button.</h5>
+                        <h5>Users can save/download their drawings by clicking the save icon button.</h5>
                     </li>
                 </ul>
             </div>
 
         </div>
-        <div class="container row justify-content-center mx-auto mt-5 mb-5" id="app">
-            <a role="button" class="btn btn-link btn-lg btn-dark appbutton" style="color:white" href="/paint.html"> Try the Paint App </a>
+        <div class="container row justify-content-center mx-auto mt-5 mb-5 pb-5" id="app">
+            <a role="button" class="btn btn-link btn-lg btn-dark appbutton" style="color:white; font-size:30px" href="/paint.html"> Try the App </a>
         </div>
 
-        <div class="container justify-content-center mx-auto mt-5 mb-5" id="">
-            <div class="row justify-content-center mb-4">
+        <div class="container-fluid justify-content-center mx-auto mt-5 pt-5 pb-5 mb-5" id="examples">
+            <div class="row justify-content-center mb-5 mt-5">
                 <h2>Some examples</h2>
             </div>
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row justify-content-center mx-auto mb-5 pb-5">
+                <div class=" mx-auto ">
                     <img src="/images/drawing1.png" class="fitimage" alt="drawing example1" >
                 </div>
-                <div class="col-md-6 ">
+                <div class="mx-auto ">
                     <img src="/images/drawing2.png" class="fitimage" alt="drawing example2" >
                 </div>
             </div>
-            <div class="row justify-content-center mt-5">
-                    <img src="/images/drawing3.png" class="fitimage" alt="drawing example3" >
+        </div>
+
+        <div class="container justify-content-center mx-auto mt-5 pt-5  mb-5" id="demo">
+            <div class="row justify-content-center pt-5">
+                <h2>Demo</h2>
+            </div>
+            <div class='row justify-content-center'>
+                <video width="1000" height="700" controls>
+                    <source src="/images/demo3.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <div class="container justify-content-center mx-auto mt-5 pt-5  pb-5 mb-5" id="developer">
+            <div class="row justify-content-center mt-5 mb-5">
+                <h2>Developer</h2>
+            </div>
+            <div class="row row-content container-fluid justify-content-center">
+                <div class="card justify-content-center mx-auto" style="width:40rem;">
+                    <img class="card-img-top" src="/images/me.jpg" alt="my photo">
+                    <div class="card-body row justify-content-around mx-auto">
+                       <h3 class="card-title ">Minchao <b>Duclos</b></h3>
+                       <h4 class="card-title "><b>Front End Developer</b> | Boot Camp Graduate</h4>
+                       <h4 class="card-text mb-5 ">This is a <b>Solo</b> project. I developed this fun app from designing to deployment. I enjoyed the each step very much and I also learned a lot. Thank you, <b>Mintbean</b>!</h4>
+                       <a role="button " class="btn justify-content-around" href="https://minchao-duclos.netlify.app"><i class="fa fa-globe extraIcon justify-content-around" ></i> </a>
+                       <a role="button" class="btn justify-content-around " href="mailto: chaohg@hotmail.com"><i class="fa fa-envelope-square extraIcon justify-content-around"></i> </a>
+                       <a role="button" class="btn justify-content-around" href="https://github.com/chaohg"> <i class="fa fa-github extraIcon justify-content-around"></i></a>
+                       
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="container justify-content-center mx-auto mt-5 mb-5" id="">
-            <div class="row justify-content-center mb-4">
-                <h2>Demo</h2>
+        <footer class="container-fluid ">
+            <div class="row justify-content-center mx-auto">
+                <h5 style="color:grey"> Minchao Duclos | Front End Developer | Seattle, WA, USA | <script>document.write(new Date().getFullYear())</script></h5>
             </div>
-        </div>
-      
+        </footer>
 
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
