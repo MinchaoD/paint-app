@@ -1,5 +1,6 @@
 <h1> My Paint App </h1>
-<h2>website link: https://minchao-duclos.netlify.app</h>
+<h2>website link: https://paint-app2021.netlify.app/</h>
+<h2>I used netlify to deploy my site, which includes a landing page and the paint app page</h2>
 
 <h2>Some features of this paint app are:</h2>
 <ul>
@@ -20,13 +21,13 @@
     </li>
 </ul>
 
-<img src='/images/paint-app.png' alt="project paint app" />
+<img src='/images/paint-app.png' alt="project paint app" style="width:500px"/>
             
 <h2>Developer</h2>
     <h3>Minchao Duclos</h3>
-    <h4>This is a Solo project. I developed this fun app from designing to deployment. I enjoyed the each step very much and I also learned a lot. Thank you, Mintbean!</h4>
-    <a role="button " class="btn justify-content-around" href="https://minchao-duclos.netlify.app"><i class="fa fa-globe extraIcon justify-content-around" ></i> </a>
-    <a role="button" class="btn justify-content-around " href="mailto: chaohg@hotmail.com"><i class="fa fa-envelope-square extraIcon justify-content-around"></i> </a>
-    <a role="button" class="btn justify-content-around" href="https://github.com/chaohg"> <i class="fa fa-github extraIcon justify-content-around"></i></a>
+    <h4>This is a Solo project. I developed this fun app from designing to deployment. I enjoyed the each step very much and I also learned a lot. Thank you, Mintbean for giving me this great opportunity to practice my JavaScript, HTML and CSS skills!</h4>
+    <a role="button " class="btn justify-content-around" href="https://minchao-duclos.netlify.app">My Portfolio site </a>
+    <a role="button" class="btn justify-content-around " href="mailto: chaohg@hotmail.com">My Email</a>
+    <a role="button" class="btn justify-content-around" href="https://github.com/chaohg"> My GitHub</a>
 
 
